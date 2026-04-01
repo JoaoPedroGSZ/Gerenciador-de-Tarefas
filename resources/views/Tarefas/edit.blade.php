@@ -7,13 +7,14 @@
 
     <div>
         <div>
-            <form action="{{ route('tarefas.update', $tarefa->id) }}" method="POST" enctype="multipart/form-data">
-                @csfr
+            <form action="{{ route('tarefas.update', $tarefa->id) }}" method="POST">
+                @csrf
+                @method('PUT')
 
                 <div>
                     <div>
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" name="nome" id="nome" class="form-control" value="{{ $tarefa->nome }}"
+                        <label for="titulo" class="form-label">Titulo</label>
+                        <input type="text" name="titulo" id="titulo" class="form-control" value="{{ $tarefa->titulo }}"
                             required>
                     </div>
                     <div>

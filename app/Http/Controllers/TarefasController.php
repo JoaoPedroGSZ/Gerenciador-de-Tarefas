@@ -21,6 +21,7 @@ class TarefasController extends Controller
      */
     public function create()
     {
+        
         return view('tarefas.create');
     }
 

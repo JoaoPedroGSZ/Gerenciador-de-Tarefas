@@ -29,8 +29,8 @@
                             <td>{{ $tarefa->data_conclusao }}</td>
                             <td>
                                 <div>
-                                    <a href="{{ route('tarefas.edit') }}" class="btn btnsm btn-primary">Editar</a>
-                                    <a href="{{ route('tarefas.destroy') }}" class="btn btnsm btn-primary">Excluir</a>
+                                    <a href="{{ route('tarefas.edit', $tarefa->id) }}/edit" class="btn btnsm btn-primary">Editar</a>
+                                    <a href="{{ route('tarefas.destroy', $tarefa->id) }}" class="btn btnsm btn-primary">Excluir</a>
                                 </div>
                             </td>
                         </tr>

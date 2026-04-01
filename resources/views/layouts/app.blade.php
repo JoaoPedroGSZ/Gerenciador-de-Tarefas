@@ -9,26 +9,29 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<main class="container">
-    @yield('content')
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ route('tarefas.index') }}">Gerenciador de Tarefas</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-lin" href="{{ route('tarefas.index') }}"></a>Tarefas</li>
 
-                    </ul>
-                </div>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ route('tarefas.index') }}">Gerenciador de Tarefas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ route('tarefas.index') }}">Tarefas</a></li>
+                </ul>
             </div>
-        </nav>
-    </body>
-</main>
+        </div>
+    </nav>
+    <main class="container">
+        @yield('content')
+    </main>
+</body>
+
 
 </html>
