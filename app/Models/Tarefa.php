@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Tarefa extends Model
 {
     protected $fillable = ['titulo', 'descricao', 'data_conclusao', 'data_criacao', 'status'];
+    protected $casts = ['data_conclusao' => 'date', 'data_criacao' => 'date'];
 }
